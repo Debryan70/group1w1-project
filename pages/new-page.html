@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Page</title>
+    <link rel="stylesheet" href="../styles/new-page.css">
+</head>
+<body>
+    <div>
+        <nav style="display: flex; gap: 25px;">
+        <a href="../index.html">Main Page</a>
+        <a href="edit-page.html">Edit</a>
+    </nav>
+    <h1>New Page</h1>
+
+    <form id="newForm">
+        <label for="newTitle">Title:</label>
+        <input type="text" id="newTitle" name="newTitle" placeholder="Enter title" required>
+
+        <label for="newContent">Content:</label>
+        <textarea id="newContent" name="newContent" placeholder="Enter content" rows="4" required></textarea>
+
+        <button type="button" onclick="saveNewPage()">Save</button>
+    </form>
+    </div>
+
+    <script>
+        function saveNewPage() {
+            alert('New page saved!');
+            document.getElementById('newForm').reset();
+        }
+    </script>
+
+</body>
+</html>
